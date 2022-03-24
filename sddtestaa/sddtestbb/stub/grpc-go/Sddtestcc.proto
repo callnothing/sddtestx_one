@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package sddtestaa.sddtestbb;
+
+option go_package="github.com/sddtestaa/sddtestbb/grpc-go/stubs";
+
+
+service Sddtestcc {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
